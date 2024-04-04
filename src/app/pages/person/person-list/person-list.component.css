@@ -40,21 +40,21 @@ a {
   cursor: pointer;
 }
 
-mat-grid-tile .mat-grid-tile-content {
+::ng-deep .mat-grid-tile .mat-grid-tile-content {
   width: 90%;
   justify-content: flex-start;
 }
 
-mat-grid-tile .mat-grid-tile-content mat-form-field {
+::ng-deep .mat-grid-tile .mat-grid-tile-content .mat-form-field {
   width: 100%;
 }
 
-mat-grid-list {
+.mat-grid-list {
   width: 90%;
   margin: auto;
 }
 
-.grid-button .mat-grid-tile-content {
+.grid-button ::ng-deep .mat-grid-tile .mat-grid-tile-content {
   width: 90%;
   justify-content: flex-start;
 }
