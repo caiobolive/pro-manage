@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "web-merito": {
+    "pro-manage": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/web-merito",
+            "outputPath": "dist/pro-manage",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -87,13 +87,13 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "web-merito:build:production"
+              "browserTarget": "pro-manage:build:production"
             },
             "staging": {
-              "browserTarget": "web-merito:build:staging"
+              "browserTarget": "pro-manage:build:staging"
             },
             "development": {
-              "browserTarget": "web-merito:build:development"
+              "browserTarget": "pro-manage:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -101,7 +101,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "web-merito:build"
+            "browserTarget": "pro-manage:build"
           }
         },
         "test": {
@@ -121,6 +121,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
