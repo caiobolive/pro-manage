@@ -1,0 +1,31 @@
+:host {
+  display: flex;
+  justify-content: center;
+  background: #3f51b5;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.avatar {
+  height: 100%;
+}
+
+.mat-card {
+  padding: 50px;
+}
+
+.mat-form-field,
+button {
+  margin: 20px;
+  min-width: 500px;
+}
+
+.mat-card-footer {
+  display: flex;
+  justify-content: center;
+}
